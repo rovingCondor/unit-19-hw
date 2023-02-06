@@ -135,9 +135,14 @@
 
 
 /* Parallax window | START */
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
+.parallax-hero {
+  background-image: url('../img/hero.jpg');
+  height: 80vh; 
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* Parallax window | END */
 
@@ -179,6 +184,7 @@
 .skillsContainer {
   margin-top: 50px;
   display: flex;
+  max-width: 800px;
 }
 
 .skillItem img {
@@ -186,6 +192,69 @@
 }
 
 /* Skills Anim | END */
+
+
+/* Modal Button & Window | START */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 80%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+}
+
+/* The Close Button */
+.close-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  top:-20px;
+  right: -10px;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  color: #414141;
+  line-height: 1.6em;
+}
+/* Modal Button & Window | END */
+
+
 
 #category-offset {
   position: relative;
@@ -843,6 +912,20 @@ footer .right {
 
     .button-B {
       font-size: 16px;
+    }
+
+    .modal-content {
+      width: 50%;
+    }
+
+    .modal-content h3 {
+      font-size: 3.5em;
+    }
+    
+    .modal-content p {
+      font-size: 1.4em;
+      line-height: 2.0em;
+      margin-bottom: 20px;
     }
     
 

@@ -55,47 +55,34 @@
  <!-- Flexbox NAV | END -->
  
  <main>
-
-    <!-- Banner | OLD | START 
-    <header class="banner">
-        <div class="banner-container">
-            <h1>Hello!</h1>
-            <div>
-              <p>James Alafriz — Toronto based UX problem-solver and creative.
-              </p>
-              <div>
-                <a href="#category-offset">
-                    <button class="button button-01">View Projects</button>
-                </a>
-            </div>
-            </div>
-          </div>
-    </header>
-     Banner | OLD | END -->
-
-    <!-- Parallax Banner | START -->
-    <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="../img/hero.jpg" data-natural-width="2502" data-natural-height="1080" style="height: 100vh;">
-        <div class="banner-container">
-            <h1>Hello!</h1>
-            <div>
-              <p>James Alafriz — Toronto based UX problem-solver and creative.
-              </p>
-              <div>
-                <a href="#category-offset">
-                    <button class="button button-01">View Projects</button>
-                </a>
-            </div>
-            </div>
-          </div>
-    </div>
-    <!-- Parallax Banner | END -->
     
-    <!-- Scroll Button | START -->
-    <button class="scrollToTopBtn"><span class="fa fa-arrow-up"></span></button>
-    <!-- Scroll Button | END -->
+<!-- Parallax Hero Banner | START -->
+    <header>
+        <div class="parallax-hero">
+            <div class="banner-container">
+                <h1>Hello!</h1>
+                <div>
+                  <p>James Alafriz — Toronto based UX problem-solver and creative.
+                  </p>
+                    <div>
+                    <a href="#category-offset">
+                        <button class="button button-01">View Projects</button>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Animate In | START -->
-    <!-- animate__animated animate__fadeInUp -->
+    </header>
+<!-- Parallax Hero Banner | START -->
+
+
+<!-- Scroll Button | START -->
+    <button class="scrollToTopBtn"><span class="fa fa-arrow-up"></span></button>
+<!-- Scroll Button | END -->
+
+<!-- Animate In | START -->
+<!-- animate__animated animate__fadeInUp -->
     <h2 class="category-header">Technical Skills</h2>
     <div class="skillsContainer  animate__animated animate__fadeInUp js-waypoint-skills">
         <div class="skillItem">
@@ -110,8 +97,26 @@
 
 
     </div>
-    <!-- Animate In | END -->
-    
+<!-- Animate In | END -->
+
+
+<!-- Modal Button & Window | START -->
+    <div class="modal-button-container">
+        <button id="myBtn" class="button">Test Modal Interaction</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-header">Hello!</h2>
+            <p class="modal-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam suscipit cupiditate nihil itaque magni similique consequatur obcaecati culpa, rem fugiat vel consectetur, modi veritatis, laboriosam laborum? Mollitia officiis et voluptatibus.</p>
+        </div>
+
+    </div>
+<!-- Modal Button & Window | START -->
 
     <!-- Flexbox Section A | START -->
     <section class="main-column">
@@ -260,6 +265,8 @@
 <!-- Includes for Waypoint | START 
 <script src="js/jquery.waypoints.min.js"></script>
  Includes for Waypoint | END -->
+
+ 
 
     
 </html>

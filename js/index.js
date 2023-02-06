@@ -63,8 +63,22 @@ document.addEventListener("scroll", handleScroll);
 // Sroll to top | END
 
 
-// Parallax Windows | START
-$('.parallax-window').parallax({imageSrc: '../img/image.jpg'});
-// Parallax Windows | END
+// Modal window | START
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close-modal")[0];
 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+// Modal window | END
