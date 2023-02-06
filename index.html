@@ -17,11 +17,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Animate CSS -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+
 </head>
 
 <body>
@@ -81,10 +77,12 @@
     <button class="scrollToTopBtn"><span class="fa fa-arrow-up"></span></button>
 <!-- Scroll Button | END -->
 
-<!-- Animate In | START -->
-<!-- animate__animated animate__fadeInUp -->
+<!-- Animated Skills | START -->
     <h2 class="category-header">Technical Skills</h2>
-    <div class="skillsContainer  animate__animated animate__fadeInUp js-waypoint-skills">
+    <div class="modal-button-container">
+        <button class="button-toggle button-02">Toggle Skills</button><br><br>
+    </div>
+    <div id="div1" class="skillsContainer">
         <div class="skillItem">
             <img src="img/logos-skills/html5.svg">
         </div>
@@ -95,9 +93,8 @@
             <img src="img/logos-skills/javascript.svg">
         </div>
 
-
     </div>
-<!-- Animate In | END -->
+<!-- Animated Skills | END -->
 
 
 <!-- Modal Button & Window | START -->
@@ -253,20 +250,20 @@
 
 
 </body>
-<!-- Script for Hamburger Menu | START -->
+<!-- Scripts | START -->
 <script src="js/index.js"></script>
-<!-- Script for Hamburger Menu | END -->
 
-<!-- Includes for Parallax | START -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-<!-- Includes for Parallax | END -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-<!-- Includes for Waypoint | START 
-<script src="js/jquery.waypoints.min.js"></script>
- Includes for Waypoint | END -->
+<script>
+    $(document).ready(function(){
+  $(".button-toggle").click(function(){
+    $("#div1").fadeToggle("slow");
+  });
+});
+</script>
 
- 
+
 
     
 </html>
