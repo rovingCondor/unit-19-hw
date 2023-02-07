@@ -217,8 +217,8 @@
 
 .modal-content {
   background-color: #fefefe;
-  margin: 20% auto;
-  padding: 20px;
+  margin: 15% auto;
+  padding: 40px;
   border: 1px solid #888;
   border-radius: 5px;
   width: 80%;
@@ -228,22 +228,37 @@
 /* The Close Button */
 .close-modal {
   color: #aaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
-  position: relative;
-  top:-20px;
-  right: -10px;
+  margin-bottom: 30px;
 }
+
+.modal-top {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.modal-top img {
+  display: flex;
+  width: 30%;
+}
+
+.modal-bottom {
+  text-align: center;
+  padding: 0 20px;
+}
+
 
 .close-modal:hover,
 .close-modal:focus {
-  color: black;
+  color: #fff94c;
   text-decoration: none;
   cursor: pointer;
 }
 
 .modal-header {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
 }
